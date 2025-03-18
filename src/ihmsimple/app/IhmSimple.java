@@ -10,7 +10,7 @@ public class IhmSimple {
      * @param args arguments de la ligne de commande
      */
     public static void main(String[] args) {
-        // VOTRE CODE ICI...
+        
     }
 
 }

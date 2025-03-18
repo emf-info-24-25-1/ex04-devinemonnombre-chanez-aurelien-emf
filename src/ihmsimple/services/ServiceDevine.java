@@ -40,11 +40,7 @@ public class ServiceDevine {
      * initiale donner.
      */
     public ServiceDevine(RefCtrl refCtrl2) {
-        // VOTRE CODE ICI...
-    }
-
-    public ServiceDevine(RefCtrl refCtrl2) {
-        //TODO Auto-generated constructor stub
+        this.refCtrl = refCtrl;
     }
 
     /**
@@ -54,7 +50,8 @@ public class ServiceDevine {
      * @return le nombre à deviner aléatoirement choisi
      */
     public int penserAUnNombre() {
-        // VOTRE CODE ICI...
+        int nbr = ( int ) ( Math.random() * ( NOMBRE_MAX - NOMBRE_MIN + 1 ) ) + NOMBRE_MIN;
+        return nbr;
     }
 
     /**
@@ -63,7 +60,7 @@ public class ServiceDevine {
      * @param refCtrl la référence au contrôleur de l'application
      */
     public void setRefCtrl(Controller refCtrl) {
-        // VOTRE CODE ICI...
+        this.refCtrl = refCtrl;
     }
 
     /**
@@ -72,7 +69,7 @@ public class ServiceDevine {
      * @return la référence au contrôleur de l'application
      */
     public Controller getRefCtrl() {
-        // VOTRE CODE ICI...
+        return refCtrl;
     }
 
 }

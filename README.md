@@ -74,7 +74,7 @@ class ServiceDevine {
     +setRefCtrl(Controller ctrl) void
     +getRefCtrl() Controller
 }
-note for ServiceDevine "MAX_NOMBRE = 100 \n MIN_NOMBRE = 1 \n NOMBRE_INVALIDE = -1"
+note for ServiceDevine "MAX_NOMBRE = 100\nMIN_NOMBRE = 1\nNOMBRE_INVALIDE = -1"
 Controller "1" o--> ServiceDevine : refServiceDevine
 ServiceDevine "1" o--> Controller : refController
 View "1" o--> Controller : refCtrl
